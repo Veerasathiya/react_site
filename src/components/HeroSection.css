@@ -1,0 +1,63 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.Hero-Text {
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(145, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Hero-Sub-Text {
+    font-family: 'Averia Sans Libre', cursive;
+    background: -webkit-linear-gradient(rgb(166, 255, 0), rgba(255, 255, 255, 0.767));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-container {
+    display: flex;
+    /* background: url('/public/images/img-home.jpg') center center/cover no-repeat; */
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+}
+
+.hero-container > h1 {
+    color: #fff;
+    font-size: 100px;
+    margin-top: -100px;
+}
+
+.hero-container > p {
+    color: #fff;
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width : 960px) {
+    .hero-container > h1 {
+        color: #fff;
+        font-size: 70px;
+        margin-top: -150px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .hero-container > h1 {
+        color: #fff;
+        font-size: 50px;
+        margin-top: -100px;
+    }
+
+    .hero-container > p {
+        font-size: 30px;
+    }
+}
